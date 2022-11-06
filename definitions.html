@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&amp;family=Inter&amp;family=Montserrat&amp;family=Sacramento&amp;display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-image: url("destiny.png");
+      background-color: #DAF5FF;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+    }
+
+    table.fixed {
+      table-layout: fixed;
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+    }
+
+    table.fixed td {
+      overflow: hidden;
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+    }
+
+    tr:nth-child(even) td:nth-child(odd) button {
+      background-color: #DAF5FF;
+    }
+
+    tr:nth-child(even) td:nth-child(even) button {
+      background-color: #EBE7FA;
+    }
+
+    tr:nth-child(odd) td:nth-child(odd) button {
+      background-color: #EBE7FA;
+    }
+
+    tr:nth-child(odd) td:nth-child(even) button {
+      background-color: #DAF5FF;
+    }
+
+    tbody {
+      display: table-row-group;
+      vertical-align: top;
+      border-color: inherit;
+    }
+
+    .collapsible {
+      background-color: #EBE7FA;
+      color: black;
+      cursor: pointer;
+      padding: 18px;
+      width: 50%;
+      border: none;
+      border-radius: 25px;
+      outline: none;
+      font-size: 15px;
+      margin: 3px 25%;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .active,
+    .collapsible:hover {
+      background-color: #d6cdf7;
+    }
+
+    .active,
+    .collapsible:default {
+      background-color: #EBE7FA;
+    }
+
+    .content {
+      font-family: 'Inter';
+      border-radius: 25px;
+      padding: 0 18px;
+      text-align: center;
+      display: none;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .row {
+      display: flex;
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+
+    .column {
+      flex: 50%;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 style="text-align: left; width: 600px; font-weight: 500; font-family: 'Inter';position:relative;">Important Definitions:</h1>
+
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Primary</button>
+            <div class="content">
+              <p>The Insurer provides coverage prior to other insurance policies held by the Insured.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Conditions</button>
+            <div class="content">
+              <p>The responsibilities and requirements of the Insured in order for coverage to take effect.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Compensation</button>
+            <div class="content">
+              <p>A predetermined amount that will be paid to the Insured in the event of a loss, without need to prove the expenses.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Secondary</button>
+            <div class="content">
+              <p>The Insurer provides coverage after all other insurance policies held by the Insured have been exhausted.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Exclusions</button>
+            <div class="content">
+              <p>The instances where a certain benefit is not covered.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Subrogation</button>
+            <div class="content">
+              <p>The Insurer's right to claim for any damage expenses from a 3rd party responsible for the damage, on behalf of the insured.</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+
+      <table>
+        <col width="50%">
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Policy</button>
+            <div class="content">
+              <p>A contract between the Insured and the Insurer detailing what is covered, how much is covered and whether the Insured has any Co-Pay.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Declaration Page</button>
+            <div class="content">
+              <p>The Insurer provides coverage prior to other insurance policies held by the Insured.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Deductible</button>
+            <div class="content">
+              <p>A summary of the Insured’s personal information in conjunction their policy details.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Premium</button>
+            <div class="content">
+              <p>The amount paid for an Insurance policy, based on the details of the Insured along with the coverage requested.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Summary of Benefit</button>
+            <div class="content">
+              <p>The key benefits of a plan, including details such as cost-sharing, coverage limitations and exclusions.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Reimbursement</button>
+            <div class="content">
+              <p>A payment made to the Insured by the Insurer for a covered loss.</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>
