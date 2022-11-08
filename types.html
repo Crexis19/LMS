@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&amp;family=Inter&amp;family=Montserrat&amp;family=Sacramento&amp;display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: #FFFFFF;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+    }
+
+    table.fixed {
+      table-layout: fixed;
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+    }
+
+    table.fixed td {
+      overflow: hidden;
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+    }
+
+    tbody {
+      display: table-row-group;
+      vertical-align: top;
+      border-color: inherit;
+    }
+
+    th {
+      font-family: 'Inter';
+    }
+
+    .collapsible {
+      background-color: #EBE7FA;
+      color: black;
+      cursor: pointer;
+      padding: 18px;
+      width: 50%;
+      border: none;
+      border-radius: 25px;
+      outline: none;
+      font-size: 15px;
+      margin: 3px 25%;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .active,
+    .collapsible:hover {
+      background-color: #d6cdf7;
+    }
+
+    .active,
+    .collapsible:default {
+      background-color: #EBE7FA;
+    }
+
+    .content {
+      font-family: 'Inter';
+      border-radius: 25px;
+      padding: 0 18px;
+      text-align: center;
+      display: none;
+      overflow: hidden;
+      background-color: rgba(200, 200, 200, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .row {
+      display: flex;
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+
+    .column {
+      flex: 50%;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <h1 style="text-align: left; width: 600px; font-weight: 500; font-family: 'Inter';position:relative;">Types of Insurance:</h1>
+
+  <img src="images/types-of-insurance.jpeg" alt="types of insurance" style="display: block; margin-left: auto; margin-right: auto;width: 50%;border-radius:25px;">
+
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>
+            Personal Insurance
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Travel Insurance</button>
+            <div class="content">
+              <p>Travel insurance is a type of insurance that covers the costs and losses associated with traveling. Basic plans often include emergency medical, trip costs and baggage.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">House Insurance</button>
+            <div class="content">
+              <p>House/Homeowners insurance is a type of insurance that covers the losses and damages to an individual's residence, along with furnishings and other assets in the home.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Car Insurance</button>
+            <div class="content">
+              <p>Car insurance is a type of insurance that covers the costs and losses associated with an individuals car, this includes damage to the car, liability in the event of damage to another and the medical costs related to any accident.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Life & Health Insurance</button>
+            <div class="content">
+              <p>Life & Health insurance are two types of insurance, the first pays out a sum of money after the death of an insured person. The second covers the expenses related to an individuals medical treatments.</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+    <div class="column">
+      <table>
+        <col width="50%">
+        <tr>
+          <th>
+            Property Insurance
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Liability Insurance</button>
+            <div class="content">
+              <p>Liability insurance protects the financial interests of companies and business owners in the event that they face formal lawsuits or any third-party claims. Such policies cover any direct financial liabilities incurred, as well as any legal defense expenses. </p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Error & Omissions</button>
+            <div class="content">
+              <p>Errors and omissions insurance, also known as E&O insurance, helps protect companies from lawsuits claiming they made a mistake in their professional services. This insurance can help cover the court costs and settlements.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Casualty Insurance</button>
+            <div class="content">
+              <p>Casualty insurance is a type of insurance that protects a company from liability when accidents happen, like if a customer is injured by using a products or services, or an employee is injured while at work.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="collapsible">Employee Benefits</button>
+            <div class="content">
+              <p>Employee Benefits is a type of insurance that protects companies against any error or omission in the administration of an employee benefit program, such as failure to advise employees of benefit programs.</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>
