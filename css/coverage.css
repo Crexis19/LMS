@@ -1,6 +1,8 @@
 h1 {
   margin-bottom: 0;
   margin-top: 10px;
+
+  text-align: center;
 }
 
 h3 {
@@ -15,17 +17,24 @@ padding: 3px;
 
 body {
   font-family: Inter;
+  background-color: white;
 }
+
+#basic-title {
+padding-top: 20px; 
+}
+
 .basic {
   width:100%;
   display: flex;
   justify-content: space-between;
-  padding: 150px 0;
+  padding: 50px 0;
 }
 
 .add-ons {
   width:100%;
   display: flex;
+  padding: 50px 0;
   justify-content: space-between;
 }
 
