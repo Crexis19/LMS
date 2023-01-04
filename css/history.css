@@ -75,7 +75,7 @@ border-radius: 25px;
 .timeline-row:nth-child(2n+1) .timeline-box:last-child .timeline-box-wrap{text-align: center;}
 .start-point.end-point:before{display: none;}
 .start-point.end-point{ position: absolute; bottom: 0; right: 0%; transform: translateX(50%); }
-.timeline-row:nth-child(2n+2) .start-point.end-point{left: 0;transform: translateX(-50%);right: unset;}
+.timeline-row:nth-child(2n+2) .start-point.end-point{left: 0;}
 
 .timeline-box.img-right .timeline-content-txt {text-align: right;}
 .timeline-box.img-left .timeline-content-txt {text-align: left;}
