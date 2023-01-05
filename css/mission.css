@@ -1,7 +1,3 @@
-body {
-  background-color: #E8E4FA;
-}
-
 h1 {
 font-family: Montserrat;
 font-weight: 400;
@@ -35,7 +31,7 @@ p {
   width: 750px;
   height: 250px;
   border-radius: 25px;
-  margin-left: 25px;
+  margin-left: 15px;
   position: relative;
 }
 
