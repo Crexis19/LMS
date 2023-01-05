@@ -1,0 +1,48 @@
+h1 {
+font-family: Montserrat;
+font-weight: 400;
+
+}
+
+h2 {
+  font-family: Montserrat;
+  font-weight: 400;
+
+}
+
+h3 {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+img {
+  max-width: 750px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+p {
+  font-family: Inter
+}
+
+.img-case {
+  background-color: #E8E4FA;
+  width: 750px;
+  height: 250px;
+  border-radius: 25px;
+  margin-left: 25px;
+  position: relative;
+}
+
+.block {
+  max-width: 800px;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+#mission {
+  font-size: 51px;
+  font-family: Playfair Display;
+  margin: 20px;
+}
